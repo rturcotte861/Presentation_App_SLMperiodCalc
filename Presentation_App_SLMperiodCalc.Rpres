@@ -12,18 +12,9 @@ What is needed
 ========================================================
 A spatial light modulator (SLM) diffracts light at an angle when a sinusoidal period is applied to it. The angle is wavelength dependent. This calculator provides the required period for the sinusoidal pattern needed to maintain the same diffraction angle at different wavelengths for a given wavelength and period.
 
-<style>
-.midcenter {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-}
-</style>
-<div class="midcenter" style="margin-left:-400px; margin-top:-200px;">
-<img src="Presentation_App_SLMperiodCalc-figure\Diffraction.png"></img>
-</div>
+![alt text](Presentation_App_SLMperiodCalc-figure/Diffraction.png)
 
-<div class="footer" style="margin-top:500px;font-size:80%;">
+<div class="footer" style="margin-top:100px;font-size:80%;">
 [Image source](http://gemologyproject.com/wiki/index.php?title=Diffraction)
 
 App overview: Inputs
