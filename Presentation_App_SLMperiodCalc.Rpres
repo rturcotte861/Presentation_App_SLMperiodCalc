@@ -1,0 +1,66 @@
+Presentation of the SLMperiodCalculator app
+========================================================
+author: Raphael Turcotte
+date: 05/21/2016
+autosize: true
+
+<div class="footer" style="margin-top:150px;font-size:80%;">
+Get to the app [here](https://rturcotte861.shinyapps.io/SLMperiodCalculator/)!
+
+
+What is needed
+========================================================
+A spatial light modulator (SLM) diffracts light at an angle when a sinusoidal period is applied to it. The angle is wavelength dependent. This calculator provides the required period for the sinusoidal pattern needed to maintain the same diffraction angle at different wavelengths for a given wavelength and period.
+
+<style>
+.midcenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+</style>
+<div class="midcenter" style="margin-left:-400px; margin-top:-200px;">
+<img src="Presentation_App_SLMperiodCalc-figure\Diffraction.png"></img>
+</div>
+
+<div class="footer" style="margin-top:500px;font-size:80%;">
+[Image source](http://gemologyproject.com/wiki/index.php?title=Diffraction)
+
+App overview: Inputs
+========================================================
+
+Users need to select a reference wavelength with the radio button and the desired period with the slider. These two inputs determine and fix the diffraction angle.
+
+![alt text](Presentation_App_SLMperiodCalc-figure/AppFigure.png)
+
+<div class="footer" style="margin-top:150px;font-size:80%;">
+Get to the app [here](https://rturcotte861.shinyapps.io/SLMperiodCalculator/)!
+
+App overview: Outputs
+========================================================
+The outputs on the left gives the periods required to obtain the same output angle for a subset of wavelengths. Wavelengths were chosen based on communly encountered laser wavelengths in biomedical optics applications.
+
+![alt text](Presentation_App_SLMperiodCalc-figure/AppFigure.png)
+
+<div class="footer" style="margin-top:150px;font-size:80%;">
+Get to the app [here](https://rturcotte861.shinyapps.io/SLMperiodCalculator/)!
+
+App overview: Example of calculations
+========================================================
+
+Here is an example of the basic calculations performed by the app for a selected output wavelength (560 nm).
+```{r}
+#Inputs
+Desired_Wavelegnth = 488 #nm
+Desired_Period = 6.09 # pixels
+
+#Example secondary wavelength
+Second_wavelength = 560 # nm
+
+#Calculations to obtain secondary period
+Second_Period = Second_wavelength*Desired_Period/Desired_Wavelegnth
+Second_Period # pixels
+```
+
+<div class="footer" style="margin-top:150px;font-size:80%;">
+Get to the app [here](https://rturcotte861.shinyapps.io/SLMperiodCalculator/)!
